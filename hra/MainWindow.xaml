@@ -1,0 +1,129 @@
+﻿<Window x:Class="hra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hra"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Content="vypočitej" x:Name="V" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="90" Click="V_Click"/>
+        <Button Content="Nová hra" x:Name="NG" Grid.Column="5" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="90" Click="NG_Click"/>
+        
+        <Ellipse Name="elipse0_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="0" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse0_1" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="0" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse0_2" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="0" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse0_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="0" Fill="#FFFFFFFF"/>
+
+        <Ellipse Name="elipse1_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="1" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse1_1" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="1" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse1_2" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="1" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse1_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="1" Fill="#FFFFFFFF"/>
+
+        <Ellipse Name="elipse2_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="2" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse2_1" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="2" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse2_2" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="2" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse2_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="2" Fill="#FFFFFFFF"/>
+
+        <Ellipse Name="elipse3_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="3" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse3_1" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="3" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse3_2" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="3" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse3_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="3" Fill="#FFFFFFFF"/>
+
+        <Ellipse Name="elipse4_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="4" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse4_1" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="4" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse4_2" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="4" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse4_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="4" Fill="#FFFFFFFF"/>
+
+        <Ellipse Name="elipse5_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="5" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse5_1" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="5" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse5_2" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="5" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse5_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="5" Fill="#FFFFFFFF"/>
+
+        <Ellipse Name="elipse6_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="6" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse6_1" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="6" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse6_2" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="6" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse6_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="6" Fill="#FFFFFFFF"/>
+
+        <Ellipse Name="elipse7_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="7" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse7_1" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="7" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse7_2" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="7" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="7" Fill="#FFFFFFFF"/>
+
+        <Ellipse Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="8" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="1" Grid.Row="8" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="2" Grid.Row="8" Fill="#FFFFFFFF"/>
+        <Ellipse Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="3" Grid.Row="8" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="0" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="0" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="0" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="0" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="1" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="1" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="1" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="1" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="2" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="2" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="2" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="2" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="3" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="3" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="3" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="3" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse4_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="4" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse4_3"HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="4" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse4_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="4" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse4_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="4" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse5_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="5" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse5_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="5" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse5_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="5" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse5_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="5" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse6_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="6" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse6_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="6" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse6_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="6" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse6_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="6" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="7" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="7" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="7" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse7_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="7" Fill="#FFFFFFFF"/>
+
+        <Rectangle Name="elipse8_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="4" Grid.Row="8" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse8_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="5" Grid.Row="8" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse8_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="6" Grid.Row="8" Fill="#FFFFFFFF"/>
+        <Rectangle Name="elipse8_3" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="7" Grid.Row="8" Fill="#FFFFFFFF"/>
+
+
+
+    </Grid>
+</Window>
