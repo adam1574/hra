@@ -25,14 +25,49 @@ namespace hra
             InitializeComponent();
         }
 
-        private void V_Click(object sender, RoutedEventArgs e)
+        private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            Ellipse ellipse = (Ellipse)sender;
 
+            if (ellipse.Fill.ToString() == "#FFFFFFFF")
+            {
+                ellipse.Fill = Brushes.Red;
+            }
+            else if (ellipse.Fill == Brushes.Red)
+            {
+                ellipse.Fill = Brushes.Green;
+            }
+            else if (ellipse.Fill == Brushes.Green)
+            {
+                ellipse.Fill = Brushes.Blue;
+            }
+            else if (ellipse.Fill == Brushes.Blue)
+            {
+                ellipse.Fill = Brushes.Yellow;
+            }
+            else if (ellipse.Fill == Brushes.Yellow)
+            {
+                ellipse.Fill = Brushes.Orange;
+            }
+            else if (ellipse.Fill == Brushes.Orange)
+            {
+                ellipse.Fill = Brushes.Pink;
+            }
+            else
+            {
+                ellipse.Fill = Brushes.Red;
+            }
         }
-
-        private void NG_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+           private void NastavitVariantu0(bool aktivní)
+           {
+                if (aktivní)
+                {
+                elipse0_0.MouseDown += Ellipse_MouseDown;
+                }
+                else
+                {
+                elipse0_0.MouseDown -= Ellipse_MouseDown;
+                }
+           }
     }
 }
