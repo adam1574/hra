@@ -20,9 +20,16 @@ namespace hra
     /// </summary>
     public partial class MainWindow : Window
     {
+        Brush barva1;
+        Brush barva2;
+        Brush barva3;
+        Brush barva4;
+
         public MainWindow()
         {
             InitializeComponent();
+            NastavVariantu0();
+            NastavBarvyPC();
         }
 
         private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
@@ -58,16 +65,104 @@ namespace hra
                 ellipse.Fill = Brushes.Red;
             }
         }
-           private void NastavitVariantu0(bool aktivní)
-           {
-                if (aktivní)
-                {
-                elipse0_0.MouseDown += Ellipse_MouseDown;
-                }
-                else
-                {
-                elipse0_0.MouseDown -= Ellipse_MouseDown;
-                }
-           }
+        private void NastavElipsuEnabled (Ellipse ellipse)
+        {
+            ellipse.IsEnabled = true;
+            ellipse.Fill = Brushes.LightGray;
+            ellipse.Stroke = Brushes.Black;
+            ellipse.Cursor = Cursors.Hand;
+        }
+        private void NastavElipsuDisabled(Ellipse ellipse)
+        {
+            ellipse.IsEnabled = false;
+            ellipse.Fill = Brushes.White;
+            ellipse.Stroke = Brushes.Gray;
+        }
+        
+        private void NastavVariantu0()
+        {
+            NastavElipsuEnabled(elipse0_0);
+            NastavElipsuEnabled(elipse0_1);
+            NastavElipsuEnabled(elipse0_2);
+            NastavElipsuEnabled(elipse0_3);
+
+            NastavElipsuDisabled(elipse1_0);
+            NastavElipsuDisabled(elipse1_1);
+            NastavElipsuDisabled(elipse1_2);
+            NastavElipsuDisabled(elipse1_3);
+
+            NastavElipsuDisabled(elipse2_0);
+            NastavElipsuDisabled(elipse2_1);
+            NastavElipsuDisabled(elipse2_2);
+            NastavElipsuDisabled(elipse2_3);
+           
+            NastavElipsuDisabled(elipse3_0);
+            NastavElipsuDisabled(elipse3_1);
+            NastavElipsuDisabled(elipse3_2);
+            NastavElipsuDisabled(elipse3_3);
+
+            NastavElipsuDisabled(elipse4_0);
+            NastavElipsuDisabled(elipse4_1);
+            NastavElipsuDisabled(elipse4_2);
+            NastavElipsuDisabled(elipse4_3);
+
+            NastavElipsuDisabled(elipse5_0);
+            NastavElipsuDisabled(elipse5_1);
+            NastavElipsuDisabled(elipse5_2);
+            NastavElipsuDisabled(elipse5_3);
+
+            NastavElipsuDisabled(elipse6_0);
+            NastavElipsuDisabled(elipse6_1);
+            NastavElipsuDisabled(elipse6_2);
+            NastavElipsuDisabled(elipse6_3);
+
+            NastavElipsuDisabled(elipse7_0);
+            NastavElipsuDisabled(elipse7_1);
+            NastavElipsuDisabled(elipse7_2);
+            NastavElipsuDisabled(elipse7_3);
+
+            NastavElipsuDisabled(elipse8_0);
+            NastavElipsuDisabled(elipse8_1);
+            NastavElipsuDisabled(elipse8_2);
+            NastavElipsuDisabled(elipse8_3);
+        }
+        private void NastavBarvyPC()
+        {
+            barva1 = ZiskejBarvu();
+            barva2 = ZiskejBarvu();
+            barva3 = ZiskejBarvu();
+            barva4 = ZiskejBarvu();
+        }
+        private Brush ZiskejBarvu()
+        {
+            Random random = new Random();
+            int cislo = random.Next(1, 7);
+
+            if (cislo == 1)
+            {
+               return Brushes.Red;
+            }
+            else if (cislo == 2)
+            {
+                return Brushes.Green;
+            }
+            else if (cislo == 3)
+            {
+                return Brushes.Blue;
+            }
+            else if (cislo == 4)
+            {
+                return Brushes.Yellow;
+            }
+            else if (cislo == 5)
+            {
+                return Brushes.Orange;
+            }
+            else if (cislo == 6)
+            {
+                return Brushes.Pink;
+            }
+            return Brushes.Red;
+        }
     }
 }
