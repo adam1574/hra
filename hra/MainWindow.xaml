@@ -30,7 +30,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Button Content="vypočitej" x:Name="V" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="90" IsEnabled="False" />
+        <Button Content="vypočitej" x:Name="V" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="90" IsEnabled="False" Click="Button_Click" />
         <Button Content="Nová hra" x:Name="NG" Grid.Column="5" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="90" />
         
         <Ellipse Name="elipse0_0" HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Center" Width="52" RenderTransformOrigin="0.583,0.503" Grid.Column="0" Grid.Row="0" Fill="#FFFFFFFF" MouseDown="Ellipse_MouseDown"/>

@@ -164,5 +164,30 @@ namespace hra
             }
             return Brushes.Red;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int pocetcernych = 0;
+            if (elipse0_0.Fill == barva1)
+            {
+                pocetcernych++;
+            }
+            if (elipse0_1.Fill == barva2)
+            {
+                pocetcernych++;
+            }
+            if (elipse0_2.Fill == barva3)
+            {
+                pocetcernych++;
+            }
+            if (elipse0_3.Fill == barva4)
+            {
+                pocetcernych++;
+            }
+            if (pocetcernych > 0)
+            {
+
+            }
+        }
     }
 }
