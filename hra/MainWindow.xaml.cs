@@ -30,6 +30,7 @@ namespace hra
             InitializeComponent();
             NastavVariantu0();
             NastavBarvyPC();
+            Title = $"{barva1} - {barva2} - {barva3} - {barva4}";
         }
 
         private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
@@ -172,24 +173,50 @@ namespace hra
             rectangle1_1.Fill = Brushes.LightGray;
             rectangle1_2.Fill = Brushes.LightGray;
             rectangle1_3.Fill = Brushes.LightGray;
+           
             //1. varianta
+            
             int pocetcernych = 0;
+            int pocetbilych = 0;
+           
+            
             if (elipse0_0.Fill == barva1)
             {
                 pocetcernych++;
             }
+            else if (elipse0_0.Fill == barva2 || elipse0_0.Fill == barva3 || elipse0_0.Fill == barva4)
+            {
+                pocetbilych++;
+            }
+
             if (elipse0_1.Fill == barva2)
             {
                 pocetcernych++;
             }
+            else if (elipse0_0.Fill == barva1 || elipse0_0.Fill == barva3 || elipse0_0.Fill == barva4)
+            {
+                pocetbilych++;
+            }
+
             if (elipse0_2.Fill == barva3)
             {
                 pocetcernych++;
             }
+            else if (elipse0_0.Fill == barva2 || elipse0_0.Fill == barva1 || elipse0_0.Fill == barva4)
+            {
+                pocetbilych++;
+            }
+
             if (elipse0_3.Fill == barva4)
             {
                 pocetcernych++;
             }
+            else if (elipse0_0.Fill == barva2 || elipse0_0.Fill == barva3 || elipse0_0.Fill == barva1)
+            {
+                pocetbilych++;
+            }
+            
+            
             if (pocetcernych > 0)
             {
                 rectangle1_0.Fill = Brushes.Black;
