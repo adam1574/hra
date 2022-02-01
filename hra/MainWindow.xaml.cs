@@ -167,6 +167,12 @@ namespace hra
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            rectangle1_0.Fill = Brushes.LightGray;
+            rectangle1_1.Fill = Brushes.LightGray;
+            rectangle1_2.Fill = Brushes.LightGray;
+            rectangle1_3.Fill = Brushes.LightGray;
+            //1. varianta
             int pocetcernych = 0;
             if (elipse0_0.Fill == barva1)
             {
@@ -186,8 +192,23 @@ namespace hra
             }
             if (pocetcernych > 0)
             {
-
+                rectangle1_0.Fill = Brushes.Black;
+            }
+            if (pocetcernych > 1)
+            {
+                rectangle1_1.Fill = Brushes.Black;
+            }
+            if (pocetcernych > 2)
+            {
+                rectangle1_2.Fill = Brushes.Black;
+            }
+            if (pocetcernych > 3)
+            {
+                rectangle1_3.Fill = Brushes.Black;
+                MessageBox.Show("win");
             }
         }
+
+        
     }
 }
